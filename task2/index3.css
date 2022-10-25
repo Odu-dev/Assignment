@@ -1,0 +1,10 @@
+body {
+  background-color: rgb(67, 76, 126);
+  font-family: Roboto, Arial;
+}
+
+h3 {
+  margin-top: 20%;
+  text-align: center;
+  font-size: 30px;
+}
