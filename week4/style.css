@@ -1,0 +1,136 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --orange: hsl(31, 77%, 52%);
+  --light-cyan: hsl(184, 100%, 22%);
+  --dark-cyan: hsl(179, 100%, 13%);
+  --white: white;
+}
+
+body {
+  width: 100%;
+  min-height: 10vh;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  padding: 60px;
+}
+
+.card-container {
+  width: 100%;
+  max-width: 1440px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: wrap;
+  position: relative;
+}
+
+.box {
+  width: 300px;
+  padding: 40px 0px 40px 40px;
+  min-height: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.left {
+  background-color: var(--orange);
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+}
+
+.middle {
+  background-color: var(--light-cyan);
+}
+
+.right {
+  background-color: var(--dark-cyan);
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+
+.content {
+  color: var(--white);
+  margin-bottom: 70px;
+  margin-top: 20px;
+}
+
+.content h1 {
+  font-family: Big Shoulders Display;
+  font-weight: 700;
+}
+
+.content p {
+  width: 86%;
+  font-family: Lexend Deca;
+  line-height: 30px;
+  margin-top: 20px;
+  font-weight: 400;
+}
+
+.button button,
+.grid-nav-link {
+  width: 130px;
+  border-radius: 40px;
+  background-color: var(--white);
+  color: var(--orange);
+  height: 40px;
+  border: none;
+  font-size: 15px;
+  font-family: Lexend Deca;
+}
+
+.button button:hover {
+  cursor: pointer;
+  border: 2px solid var(--white);
+  width: 130px;
+  color: var(--white);
+  transition: 0.4s;
+}
+
+.left button:hover {
+  background-color: var(--orange);
+}
+
+.middle button:hover {
+  background-color: var(--light-cyan);
+}
+
+.right button:hover {
+  background-color: var(--dark-cyan);
+}
+
+.middle button {
+  color: var(--light-cyan);
+}
+
+.right button {
+  color: var(--dark-cyan);
+}
+
+.grid-nav-link {
+  text-decoration: none;
+  padding-left: 25px;
+  padding-top: 10px;
+  color: var(--white);
+  position: absolute;
+  bottom: -50px;
+  background-color: var(--light-cyan);
+  transition: 0.5s;
+}
+
+.grid-nav-link:hover {
+  box-shadow: 2px 2px 5px black;
+}
+
+@media screen and (max-width: 375px) {
+  .card-container {
+    flex-direction: column;
+  }
+}
